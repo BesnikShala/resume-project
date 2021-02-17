@@ -30,6 +30,10 @@
     background-color: #f4f4f4d5;
 }
 
+.bg-color-work-history {
+    background-color: #9b59b6;
+}
+
 /*-----------------------------Special paddings/margins/texts--*/
 
 h1,
@@ -63,11 +67,13 @@ h4 {
     float: none;
 }
 
+.history-heading,
 .section-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
+    color: #fafafa;
 }
 
 /*-----------------------------Heading--*/
@@ -264,14 +270,67 @@ footer {
     position: relative;
     height: 25px;
     margin-bottom: 4px;
-    line-height: 1.5;
 }
 
 .progress-type {
     position: absolute;
     left: 0px;
     font-weight: 400;
-    padding: 12px 10px 12px 10px;
+    padding: 3px 30px 2px 10px;
     color: #fafafa;
     background-color: rgba(25, 25, 25, 0.2);
+    margin-bottom: 5px;
+}
+
+.progress-section {
+    margin: 40px 20px;
+}
+
+/*-----------------------------Work History Section--*/
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+    
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.3em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 15px;
+    height: 15px;
+    display: block;
+    top: 39px;
+    position: absolute;
+    left: -8px;
+    border-radius: 50%;
+    content: '';
+    background: #fafafa;
+}
+
+.history-items {
+    margin-bottom: 30px;
 }
